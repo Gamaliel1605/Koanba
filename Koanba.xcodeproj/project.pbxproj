@@ -23,14 +23,14 @@
 		F4CBDD2E2A5EA4A6006227FA /* HomepageInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD2D2A5EA4A6006227FA /* HomepageInjection.swift */; };
 		F4CBDD322A5EA4D0006227FA /* HomepageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD312A5EA4D0006227FA /* HomepageInteractor.swift */; };
 		F4CBDD342A5EA4D8006227FA /* HomepageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD332A5EA4D8006227FA /* HomepageModel.swift */; };
-		F4CBDD362A5EA4EE006227FA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD352A5EA4EE006227FA /* Utils.swift */; };
+		F4CBDD362A5EA4EE006227FA /* UtilsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */; };
 		F4CBDD402A5EA55A006227FA /* DetailPageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD3F2A5EA55A006227FA /* DetailPageRepository.swift */; };
 		F4CBDD422A5EA571006227FA /* DetailPageRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD412A5EA571006227FA /* DetailPageRemoteDataSource.swift */; };
 		F4CBDD442A5EA58C006227FA /* DetailPageLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD432A5EA58C006227FA /* DetailPageLocalDataSource.swift */; };
 		F4CBDD462A5EA59B006227FA /* DetailPageInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD452A5EA59B006227FA /* DetailPageInjection.swift */; };
 		F4CBDD4A2A5EA5B5006227FA /* DetailPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD492A5EA5B5006227FA /* DetailPageModel.swift */; };
 		F4CBDD4C2A5EA5BF006227FA /* DetailPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD4B2A5EA5BF006227FA /* DetailPageInteractor.swift */; };
-		F4CBDD4E2A5EA5C8006227FA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD4D2A5EA5C8006227FA /* Utils.swift */; };
+		F4CBDD4E2A5EA5C8006227FA /* UtilsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD4D2A5EA5C8006227FA /* UtilsDetail.swift */; };
 		F4CBDD542A5EA607006227FA /* DetailPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD532A5EA607006227FA /* DetailPageRouter.swift */; };
 		F4CBDD562A5EA613006227FA /* DetailPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD552A5EA613006227FA /* DetailPagePresenter.swift */; };
 		F4CBDD592A5EA620006227FA /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD572A5EA620006227FA /* DetailPageViewController.swift */; };
@@ -75,14 +75,14 @@
 		F4CBDD2D2A5EA4A6006227FA /* HomepageInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInjection.swift; sourceTree = "<group>"; };
 		F4CBDD312A5EA4D0006227FA /* HomepageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInteractor.swift; sourceTree = "<group>"; };
 		F4CBDD332A5EA4D8006227FA /* HomepageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageModel.swift; sourceTree = "<group>"; };
-		F4CBDD352A5EA4EE006227FA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsHome.swift; sourceTree = "<group>"; };
 		F4CBDD3F2A5EA55A006227FA /* DetailPageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageRepository.swift; sourceTree = "<group>"; };
 		F4CBDD412A5EA571006227FA /* DetailPageRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageRemoteDataSource.swift; sourceTree = "<group>"; };
 		F4CBDD432A5EA58C006227FA /* DetailPageLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageLocalDataSource.swift; sourceTree = "<group>"; };
 		F4CBDD452A5EA59B006227FA /* DetailPageInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageInjection.swift; sourceTree = "<group>"; };
 		F4CBDD492A5EA5B5006227FA /* DetailPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageModel.swift; sourceTree = "<group>"; };
 		F4CBDD4B2A5EA5BF006227FA /* DetailPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageInteractor.swift; sourceTree = "<group>"; };
-		F4CBDD4D2A5EA5C8006227FA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4CBDD4D2A5EA5C8006227FA /* UtilsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsDetail.swift; sourceTree = "<group>"; };
 		F4CBDD532A5EA607006227FA /* DetailPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageRouter.swift; sourceTree = "<group>"; };
 		F4CBDD552A5EA613006227FA /* DetailPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPagePresenter.swift; sourceTree = "<group>"; };
 		F4CBDD572A5EA620006227FA /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 		F4CBDD212A5EA341006227FA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDD352A5EA4EE006227FA /* Utils.swift */,
+				F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 		F4CBDD392A5EA51B006227FA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDD4D2A5EA5C8006227FA /* Utils.swift */,
+				F4CBDD4D2A5EA5C8006227FA /* UtilsDetail.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -576,9 +576,9 @@
 				F4CBDD422A5EA571006227FA /* DetailPageRemoteDataSource.swift in Sources */,
 				F4CBDD2E2A5EA4A6006227FA /* HomepageInjection.swift in Sources */,
 				F4CBDD282A5EA43A006227FA /* HomepageRemoteDataSource.swift in Sources */,
-				F4CBDD4E2A5EA5C8006227FA /* Utils.swift in Sources */,
+				F4CBDD4E2A5EA5C8006227FA /* UtilsDetail.swift in Sources */,
 				F4CBDCDF2A5E96DB006227FA /* AppDelegate.swift in Sources */,
-				F4CBDD362A5EA4EE006227FA /* Utils.swift in Sources */,
+				F4CBDD362A5EA4EE006227FA /* UtilsHome.swift in Sources */,
 				F4CBDD2C2A5EA48B006227FA /* HomepageRepository.swift in Sources */,
 				F4CBDD402A5EA55A006227FA /* DetailPageRepository.swift in Sources */,
 				F4CBDD112A5E9AED006227FA /* HomeViewController.swift in Sources */,
@@ -755,7 +755,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54LBDS3ZS9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Koanba/Info.plist;
+				INFOPLIST_FILE = "Koanba/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -782,7 +782,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 54LBDS3ZS9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Koanba/Info.plist;
+				INFOPLIST_FILE = "Koanba/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
