@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tfSearch: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    var presenter: HomePresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -36,6 +38,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.ID, for: indexPath) as! HomeTableViewCell
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        presenter?.goToDetailPage(movieID: indexPath.row)
     }
     
 }

@@ -17,6 +17,8 @@ class DetailPageViewController: UIViewController {
     @IBOutlet weak var lblTitleCast: UILabel!
     @IBOutlet weak var colView: UICollectionView!
     
+    var presenter: DetailPagePresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
