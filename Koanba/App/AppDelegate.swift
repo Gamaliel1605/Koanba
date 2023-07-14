@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        self.updateRealm()
+        self.setupView()
+        
+        return true
+    }
+    
+    private func updateRealm() {
+        do {
+            let config = Realm.Configuration(
+              schemaVersion: 3,
+              migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 3) {
+                    migration.enumerateObjects(ofType: HomepageEntity.className()) { oldObject, newObject in
+                        
+                    }
+                }
+              })
+            Realm.Configuration.defaultConfiguration = config
+            try Realm.performMigration()
+            let newRealm = try Realm()
+        } catch let error as NSError {
+            print("error \(error.localizedDescription)")
+        }
+    }
+    
+    private func setupView() {
         let homeVC = HomeRouter.createModule()
         
         mainNavigationController = UINavigationController(rootViewController: homeVC)
@@ -23,9 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = mainNavigationController
-        
-        return true
     }
 
 }
-
