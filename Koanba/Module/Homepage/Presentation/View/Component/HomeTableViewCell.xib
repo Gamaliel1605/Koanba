@@ -39,27 +39,34 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comedy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-sl-unx">
-                                <rect key="frame" x="136" y="83" width="168" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-17-JV5">
+                                <rect key="frame" x="136" y="60" width="184" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PC7-n1-NNC"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o9t-C5-rQb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L0p-WA-Gqj" firstAttribute="top" secondItem="UEo-WL-b1E" secondAttribute="top" id="2xC-hM-tgk"/>
-                            <constraint firstItem="5YC-sl-unx" firstAttribute="leading" secondItem="sx3-1l-v3R" secondAttribute="trailing" constant="20" id="3vd-IJ-baV"/>
+                            <constraint firstAttribute="bottom" secondItem="HkG-17-JV5" secondAttribute="bottom" id="6Xr-Sn-rik"/>
                             <constraint firstItem="y0F-3w-pMd" firstAttribute="leading" secondItem="L0p-WA-Gqj" secondAttribute="leading" id="Esb-9C-h66"/>
                             <constraint firstItem="L0p-WA-Gqj" firstAttribute="leading" secondItem="sx3-1l-v3R" secondAttribute="trailing" constant="20" id="GX5-if-O89"/>
                             <constraint firstAttribute="bottom" secondItem="sx3-1l-v3R" secondAttribute="bottom" id="Ndx-kc-Mvu"/>
                             <constraint firstItem="sx3-1l-v3R" firstAttribute="top" secondItem="UEo-WL-b1E" secondAttribute="top" id="PyT-p1-DHM"/>
                             <constraint firstAttribute="trailing" secondItem="L0p-WA-Gqj" secondAttribute="trailing" constant="16" id="RwC-j6-5kt"/>
                             <constraint firstItem="y0F-3w-pMd" firstAttribute="top" secondItem="L0p-WA-Gqj" secondAttribute="bottom" constant="4" id="Tcy-h7-zgE"/>
-                            <constraint firstAttribute="bottom" secondItem="5YC-sl-unx" secondAttribute="bottom" id="iAb-2n-cVh"/>
-                            <constraint firstAttribute="trailing" secondItem="5YC-sl-unx" secondAttribute="trailing" constant="16" id="nmM-mu-V1b"/>
+                            <constraint firstItem="HkG-17-JV5" firstAttribute="leading" secondItem="sx3-1l-v3R" secondAttribute="trailing" constant="20" id="gbN-69-sf0"/>
                             <constraint firstItem="sx3-1l-v3R" firstAttribute="leading" secondItem="UEo-WL-b1E" secondAttribute="leading" constant="16" id="ppD-qX-f6X"/>
                             <constraint firstAttribute="trailing" secondItem="y0F-3w-pMd" secondAttribute="trailing" constant="16" id="rel-ZG-ys9"/>
+                            <constraint firstAttribute="trailing" secondItem="HkG-17-JV5" secondAttribute="trailing" id="z83-sm-ggt"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -72,21 +79,21 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="colView" destination="HkG-17-JV5" id="CaP-8g-9K9"/>
                 <outlet property="imgMovie" destination="sx3-1l-v3R" id="eWv-h6-H5C"/>
-                <outlet property="lblCategoryMovie" destination="5YC-sl-unx" id="g6w-mw-8y8"/>
                 <outlet property="lblTitleMovie" destination="L0p-WA-Gqj" id="K85-3c-Txu"/>
                 <outlet property="lblYearMovie" destination="y0F-3w-pMd" id="sBB-bS-buj"/>
             </connections>
-            <point key="canvasLocation" x="139" y="20"/>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="placeholder" width="611.33331298828125" height="440.66665649414062"/>
+        <image name="placeholder" width="583.33331298828125" height="465.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

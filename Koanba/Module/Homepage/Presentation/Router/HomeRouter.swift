@@ -12,7 +12,8 @@ class HomeRouter {
     
     static func createModule() -> HomeViewController {
         let controller = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let presenter = HomeDefaultPresenter(view: controller)
+        let interactor = HomepageInjection.init().provideHomepageMovie()
+        let presenter = HomeDefaultPresenter(view: controller, interactor: interactor)
         
         controller.presenter = presenter
         

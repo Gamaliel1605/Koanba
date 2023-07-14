@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct HomepageModel {
+    
+    var id: Int?
+    var releaseDate: String?
+    var title: String?
+    var image: String?
+    var genreID: [GenreID] = []
+    
+}
+
+struct GenreID {
+    var id: Int?
+}

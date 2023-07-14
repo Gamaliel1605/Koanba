@@ -22,11 +22,11 @@
 		F4CBDD122A5E9AED006227FA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CBDD102A5E9AED006227FA /* HomeViewController.xib */; };
 		F4CBDD1E2A5E9E16006227FA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD1D2A5E9E16006227FA /* HomePresenter.swift */; };
 		F4CBDD202A5E9E20006227FA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD1F2A5E9E20006227FA /* HomeRouter.swift */; };
-		F4CBDD282A5EA43A006227FA /* HomepageRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD272A5EA43A006227FA /* HomepageRemoteDataSource.swift */; };
-		F4CBDD2A2A5EA45A006227FA /* HomepageLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD292A5EA45A006227FA /* HomepageLocalDataSource.swift */; };
+		F4CBDD282A5EA43A006227FA /* HomepageDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD272A5EA43A006227FA /* HomepageDefaultRemoteDataSource.swift */; };
+		F4CBDD2A2A5EA45A006227FA /* HomepageDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD292A5EA45A006227FA /* HomepageDefaultLocalDataSource.swift */; };
 		F4CBDD2C2A5EA48B006227FA /* HomepageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD2B2A5EA48B006227FA /* HomepageRepository.swift */; };
 		F4CBDD2E2A5EA4A6006227FA /* HomepageInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD2D2A5EA4A6006227FA /* HomepageInjection.swift */; };
-		F4CBDD322A5EA4D0006227FA /* HomepageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD312A5EA4D0006227FA /* HomepageInteractor.swift */; };
+		F4CBDD322A5EA4D0006227FA /* HomepageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD312A5EA4D0006227FA /* HomepageUseCase.swift */; };
 		F4CBDD342A5EA4D8006227FA /* HomepageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD332A5EA4D8006227FA /* HomepageModel.swift */; };
 		F4CBDD362A5EA4EE006227FA /* UtilsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */; };
 		F4CBDD402A5EA55A006227FA /* DetailPageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD3F2A5EA55A006227FA /* DetailPageRepository.swift */; };
@@ -40,6 +40,9 @@
 		F4CBDD562A5EA613006227FA /* DetailPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD552A5EA613006227FA /* DetailPagePresenter.swift */; };
 		F4CBDD592A5EA620006227FA /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD572A5EA620006227FA /* DetailPageViewController.swift */; };
 		F4CBDD5A2A5EA620006227FA /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CBDD582A5EA620006227FA /* DetailPageViewController.xib */; };
+		F4DB245B2A613E3A0033B86E /* HomepageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB245A2A613E3A0033B86E /* HomepageResponse.swift */; };
+		F4DB245E2A613FB80033B86E /* HomepageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB245D2A613FB80033B86E /* HomepageEntity.swift */; };
+		F4DB24612A6141DE0033B86E /* HomeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB24602A6141DE0033B86E /* HomeMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,11 +88,11 @@
 		F4CBDD102A5E9AED006227FA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F4CBDD1D2A5E9E16006227FA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F4CBDD1F2A5E9E20006227FA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		F4CBDD272A5EA43A006227FA /* HomepageRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageRemoteDataSource.swift; sourceTree = "<group>"; };
-		F4CBDD292A5EA45A006227FA /* HomepageLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageLocalDataSource.swift; sourceTree = "<group>"; };
+		F4CBDD272A5EA43A006227FA /* HomepageDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
+		F4CBDD292A5EA45A006227FA /* HomepageDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageDefaultLocalDataSource.swift; sourceTree = "<group>"; };
 		F4CBDD2B2A5EA48B006227FA /* HomepageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageRepository.swift; sourceTree = "<group>"; };
 		F4CBDD2D2A5EA4A6006227FA /* HomepageInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInjection.swift; sourceTree = "<group>"; };
-		F4CBDD312A5EA4D0006227FA /* HomepageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInteractor.swift; sourceTree = "<group>"; };
+		F4CBDD312A5EA4D0006227FA /* HomepageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageUseCase.swift; sourceTree = "<group>"; };
 		F4CBDD332A5EA4D8006227FA /* HomepageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageModel.swift; sourceTree = "<group>"; };
 		F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsHome.swift; sourceTree = "<group>"; };
 		F4CBDD3F2A5EA55A006227FA /* DetailPageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageRepository.swift; sourceTree = "<group>"; };
@@ -103,6 +106,9 @@
 		F4CBDD552A5EA613006227FA /* DetailPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPagePresenter.swift; sourceTree = "<group>"; };
 		F4CBDD572A5EA620006227FA /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		F4CBDD582A5EA620006227FA /* DetailPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
+		F4DB245A2A613E3A0033B86E /* HomepageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageResponse.swift; sourceTree = "<group>"; };
+		F4DB245D2A613FB80033B86E /* HomepageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageEntity.swift; sourceTree = "<group>"; };
+		F4DB24602A6141DE0033B86E /* HomeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +149,6 @@
 				6CB3128B952D0DE14100789B /* Pods-KoanbaTests.debug.xcconfig */,
 				5291EBDF7E4CB242D915808D /* Pods-KoanbaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -310,6 +315,7 @@
 		F4CBDD212A5EA341006227FA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F4DB245F2A6141C80033B86E /* Mapper */,
 				F4CBDD352A5EA4EE006227FA /* UtilsHome.swift */,
 			);
 			path = Utils;
@@ -345,7 +351,8 @@
 		F4CBDD252A5EA409006227FA /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDD292A5EA45A006227FA /* HomepageLocalDataSource.swift */,
+				F4DB245C2A613FAB0033B86E /* Entity */,
+				F4CBDD292A5EA45A006227FA /* HomepageDefaultLocalDataSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -353,7 +360,8 @@
 		F4CBDD262A5EA40F006227FA /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDD272A5EA43A006227FA /* HomepageRemoteDataSource.swift */,
+				F4DB24592A613E040033B86E /* Response */,
+				F4CBDD272A5EA43A006227FA /* HomepageDefaultRemoteDataSource.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -369,7 +377,7 @@
 		F4CBDD302A5EA4C0006227FA /* Use Case */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDD312A5EA4D0006227FA /* HomepageInteractor.swift */,
+				F4CBDD312A5EA4D0006227FA /* HomepageUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -485,6 +493,30 @@
 				F4CBDD582A5EA620006227FA /* DetailPageViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F4DB24592A613E040033B86E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB245A2A613E3A0033B86E /* HomepageResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F4DB245C2A613FAB0033B86E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB245D2A613FB80033B86E /* HomepageEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F4DB245F2A6141C80033B86E /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB24602A6141DE0033B86E /* HomeMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,23 +762,26 @@
 			files = (
 				F4CBDD1E2A5E9E16006227FA /* HomePresenter.swift in Sources */,
 				F4CBDD4A2A5EA5B5006227FA /* DetailPageModel.swift in Sources */,
+				F4DB245E2A613FB80033B86E /* HomepageEntity.swift in Sources */,
 				F4CBDD462A5EA59B006227FA /* DetailPageInjection.swift in Sources */,
 				F4CBDD202A5E9E20006227FA /* HomeRouter.swift in Sources */,
 				F4CBDD4C2A5EA5BF006227FA /* DetailPageInteractor.swift in Sources */,
-				F4CBDD322A5EA4D0006227FA /* HomepageInteractor.swift in Sources */,
-				F4CBDD2A2A5EA45A006227FA /* HomepageLocalDataSource.swift in Sources */,
+				F4CBDD322A5EA4D0006227FA /* HomepageUseCase.swift in Sources */,
+				F4CBDD2A2A5EA45A006227FA /* HomepageDefaultLocalDataSource.swift in Sources */,
 				F4CBDD442A5EA58C006227FA /* DetailPageLocalDataSource.swift in Sources */,
 				F4CBDD562A5EA613006227FA /* DetailPagePresenter.swift in Sources */,
 				F4CBDD422A5EA571006227FA /* DetailPageRemoteDataSource.swift in Sources */,
 				F4CBDD2E2A5EA4A6006227FA /* HomepageInjection.swift in Sources */,
-				F4CBDD282A5EA43A006227FA /* HomepageRemoteDataSource.swift in Sources */,
+				F4CBDD282A5EA43A006227FA /* HomepageDefaultRemoteDataSource.swift in Sources */,
 				F4CBDD4E2A5EA5C8006227FA /* UtilsDetail.swift in Sources */,
 				F4CBDCDF2A5E96DB006227FA /* AppDelegate.swift in Sources */,
 				F4CBDD362A5EA4EE006227FA /* UtilsHome.swift in Sources */,
+				F4DB24612A6141DE0033B86E /* HomeMapper.swift in Sources */,
 				F4CBDD2C2A5EA48B006227FA /* HomepageRepository.swift in Sources */,
 				F4912F742A5FEDE900676E0A /* HomeTableViewCell.swift in Sources */,
 				F4CBDD402A5EA55A006227FA /* DetailPageRepository.swift in Sources */,
 				F4CBDD112A5E9AED006227FA /* HomeViewController.swift in Sources */,
+				F4DB245B2A613E3A0033B86E /* HomepageResponse.swift in Sources */,
 				F4CBDD592A5EA620006227FA /* DetailPageViewController.swift in Sources */,
 				F4CBDD542A5EA607006227FA /* DetailPageRouter.swift in Sources */,
 				F4CBDD342A5EA4D8006227FA /* HomepageModel.swift in Sources */,
