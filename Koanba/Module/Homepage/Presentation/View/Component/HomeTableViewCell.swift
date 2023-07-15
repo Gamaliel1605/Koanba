@@ -13,7 +13,6 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var imgMovie: UIImageView!
     @IBOutlet weak var lblTitleMovie: UILabel!
     @IBOutlet weak var lblYearMovie: UILabel!
-    @IBOutlet weak var colView: UICollectionView!
     
     static let ID = "HomeTableViewCell"
     
