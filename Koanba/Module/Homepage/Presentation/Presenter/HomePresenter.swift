@@ -13,7 +13,7 @@ protocol HomePresenter {
     var movieData: [HomepageModel] {get set}
     var numOfMovie: Int {get}
     
-    func getMovieNowPlaying()
+    func getMovieNowPlaying(page: Int)
     func goToDetailPage(movieID: Int)
     func filterData(text: String)
 }
@@ -38,8 +38,8 @@ class HomeDefaultPresenter: HomePresenter {
         self.interactor = interactor
     }
     
-    func getMovieNowPlaying() {
-        interactor.getMovieData()
+    func getMovieNowPlaying(page: Int) {
+        interactor.getMovieData(page: page)
             .subscribe { data in
                 self.filteredMovie = data
                 self.movieData = self.filteredMovie

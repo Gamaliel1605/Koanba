@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 protocol HomepageRepository {
-    func getDataNowPlaying() -> Observable<[HomepageModel]>
+    func getDataNowPlaying(page: Int) -> Observable<[HomepageModel]>
 }
 
 class HomepageDefaultRepository {
@@ -30,8 +30,8 @@ class HomepageDefaultRepository {
 }
 
 extension HomepageDefaultRepository: HomepageRepository {
-    func getDataNowPlaying() -> Observable<[HomepageModel]> {
-        return self.remote.getDataMovieNowPlaying()
+    func getDataNowPlaying(page: Int) -> Observable<[HomepageModel]> {
+        return self.remote.getDataMovieNowPlaying(page: page)
             .map({ response in
                 HomeMapper.mapMovieNowPlayingResponseToEntity(movieResponse: response)
             })
