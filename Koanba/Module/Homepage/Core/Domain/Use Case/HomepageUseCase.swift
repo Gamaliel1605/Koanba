@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 protocol HomepageUseCase {
-    func getMovieData() -> Observable<[HomepageModel]>
+    func getMovieData(page: Int) -> Observable<[HomepageModel]>
 }
 
 class HomepageDefaultProtocol: HomepageUseCase {
@@ -20,7 +20,7 @@ class HomepageDefaultProtocol: HomepageUseCase {
         self.repository = repository
     }
     
-    func getMovieData() -> Observable<[HomepageModel]> {
-        return repository.getDataNowPlaying()
+    func getMovieData(page: Int) -> Observable<[HomepageModel]> {
+        return repository.getDataNowPlaying(page: page)
     }
 }

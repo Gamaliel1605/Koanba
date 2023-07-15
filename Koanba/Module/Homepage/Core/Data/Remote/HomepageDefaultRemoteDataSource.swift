@@ -11,7 +11,7 @@ import RxSwift
 import Alamofire
 
 protocol HomepageRemoteDataSource {
-    func getDataMovieNowPlaying() -> Observable<[HomepageDataResponse]>
+    func getDataMovieNowPlaying(page: Int) -> Observable<[HomepageDataResponse]>
 }
 
 class HomepageDefaultRemoteDataSource {
@@ -24,11 +24,14 @@ class HomepageDefaultRemoteDataSource {
 
 extension HomepageDefaultRemoteDataSource: HomepageRemoteDataSource {
     
-    func getDataMovieNowPlaying() -> Observable<[HomepageDataResponse]> {
+    func getDataMovieNowPlaying(page: Int) -> Observable<[HomepageDataResponse]> {
         let headers: HTTPHeaders = [.authorization(bearerToken: token)]
         return Observable<[HomepageDataResponse]>.create { homeDataObserver in
             if let url = URL(string: self.GET_MOVIE_LIST_NOW_PLAYING) {
-                AF.request(url, headers: headers)
+                let parameter: Parameters = [
+                    "page": page
+                ]
+                AF.request(url, parameters: parameter, headers: headers)
                     .validate()
                     .responseDecodable(of: HomepageResponse.self) { homeDataResponse in
                         switch homeDataResponse.result {

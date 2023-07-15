@@ -17,11 +17,12 @@ class HomeViewController: UIViewController {
     
     var presenter: HomePresenter?
     private let disposebag = DisposeBag()
+    var curentPage = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        presenter?.getMovieNowPlaying()
+        presenter?.getMovieNowPlaying(page: curentPage)
     }
     
     func setupView() {
@@ -66,6 +67,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: false)
         guard let movieID = presenter?.movieData[indexPath.row].id else {return}
         presenter?.goToDetailPage(movieID: movieID)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastIndex = (self.presenter?.movieData.count ?? 0) - 1
+        if indexPath.row == lastIndex {
+            curentPage += 1
+            presenter?.getMovieNowPlaying(page: curentPage)
+        }
     }
     
 }
