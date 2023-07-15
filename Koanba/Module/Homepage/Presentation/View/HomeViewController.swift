@@ -34,6 +34,17 @@ class HomeViewController: UIViewController {
     }
     
     func setupStream() {
+        let refreshEvent = PublishSubject<Void>()
+            tableView.refreshControl = UIRefreshControl()
+            tableView.refreshControl?.rx.controlEvent(.valueChanged)
+                .bind(to: refreshEvent)
+                .disposed(by: disposebag)
+        refreshEvent
+                .subscribe(onNext: { [weak self] in
+                    self?.curentPage = 1
+                    self?.presenter?.getMovieNowPlaying(page: self?.curentPage ?? 1)
+                })
+                .disposed(by: disposebag)
         self.tfSearch.rx.text.orEmpty
             .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext:{ [weak self] text in
