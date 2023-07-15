@@ -48,7 +48,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        presenter?.goToDetailPage(movieID: indexPath.row)
+        guard let movieID = presenter?.movieData[indexPath.row].id else {return}
+        presenter?.goToDetailPage(movieID: movieID)
     }
     
 }

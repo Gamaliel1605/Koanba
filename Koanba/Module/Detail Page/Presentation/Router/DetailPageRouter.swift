@@ -12,9 +12,11 @@ class DetailPageRouter {
     
     static func createModule(movieID: Int) -> DetailPageViewController {
         let controller = DetailPageViewController(nibName: "DetailPageViewController", bundle: nil)
-        let presenter = DetailPagePresenter(view: controller)
+        let interactor = DetailPageInjcetion.init().provideMovieDetail()
+        let presenter = DetailPageDefaultPresenter(view: controller, interactor: interactor)
         
         controller.presenter = presenter
+        presenter.movieID = movieID
         
         return controller
     }
