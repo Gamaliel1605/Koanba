@@ -40,14 +40,16 @@ class HomeDefaultPresenter: HomePresenter {
     
     func getMovieNowPlaying(page: Int) {
         interactor.getMovieData(page: page)
-            .subscribe { data in
-                self.filteredMovie = data
-                self.movieData = self.filteredMovie
+            .subscribe { [weak self] data in
+                self?.filteredMovie = data
+                self?.movieData = self?.filteredMovie ?? []
                 DispatchQueue.main.async {
-                    self.view.tableView.reloadData()
+                    self?.view.tableView.reloadData()
+                    self?.view.tableView.refreshControl?.endRefreshing()
                 }
-            } onError: { error in
+            } onError: { [weak self] error in
                 print(error.localizedDescription)
+                self?.view.tableView.refreshControl?.endRefreshing()
             }.disposed(by: disposeBag)
     }
     
