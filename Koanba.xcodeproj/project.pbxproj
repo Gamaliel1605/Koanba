@@ -10,12 +10,15 @@
 		05AFB5CF66365BE13FCBE98C /* Pods_Koanba_KoanbaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43F165B26A2F13FDF8DE012 /* Pods_Koanba_KoanbaUITests.framework */; };
 		737EFCA32DB70F4491D202D3 /* Pods_KoanbaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608DAFA1510BD67C4397453C /* Pods_KoanbaTests.framework */; };
 		74F8DE23B5E5C19D206083AA /* Pods_Koanba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74CDD4CCE9308245779C6EA /* Pods_Koanba.framework */; };
+		F46249782A62E503000F65EC /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46249772A62E503000F65EC /* MovieListInteractor.swift */; };
+		F462497C2A62E7F7000F65EC /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462497B2A62E7F7000F65EC /* MovieDetailInteractor.swift */; };
+		F462497E2A62E81A000F65EC /* DetailPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462497D2A62E81A000F65EC /* DetailPageTests.swift */; };
 		F4912F742A5FEDE900676E0A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4912F722A5FEDE900676E0A /* HomeTableViewCell.swift */; };
 		F4912F752A5FEDE900676E0A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4912F732A5FEDE900676E0A /* HomeTableViewCell.xib */; };
 		F4CBDCDF2A5E96DB006227FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDCDE2A5E96DB006227FA /* AppDelegate.swift */; };
 		F4CBDCE82A5E96DB006227FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CBDCE72A5E96DB006227FA /* Assets.xcassets */; };
 		F4CBDCEB2A5E96DB006227FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CBDCE92A5E96DB006227FA /* LaunchScreen.storyboard */; };
-		F4CBDCF62A5E96DC006227FA /* KoanbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDCF52A5E96DC006227FA /* KoanbaTests.swift */; };
+		F4CBDCF62A5E96DC006227FA /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDCF52A5E96DC006227FA /* MovieListTests.swift */; };
 		F4CBDD002A5E96DC006227FA /* KoanbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDCFF2A5E96DC006227FA /* KoanbaUITests.swift */; };
 		F4CBDD022A5E96DC006227FA /* KoanbaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD012A5E96DC006227FA /* KoanbaUITestsLaunchTests.swift */; };
 		F4CBDD112A5E9AED006227FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBDD0F2A5E9AED006227FA /* HomeViewController.swift */; };
@@ -81,6 +84,9 @@
 		B74CDD4CCE9308245779C6EA /* Pods_Koanba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Koanba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43F165B26A2F13FDF8DE012 /* Pods_Koanba_KoanbaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Koanba_KoanbaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18214D6B28FAA618D0F27A6 /* Pods-Koanba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koanba.debug.xcconfig"; path = "Target Support Files/Pods-Koanba/Pods-Koanba.debug.xcconfig"; sourceTree = "<group>"; };
+		F46249772A62E503000F65EC /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
+		F462497B2A62E7F7000F65EC /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
+		F462497D2A62E81A000F65EC /* DetailPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageTests.swift; sourceTree = "<group>"; };
 		F4912F722A5FEDE900676E0A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F4912F732A5FEDE900676E0A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		F4CBDCDB2A5E96DB006227FA /* Koanba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Koanba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +95,7 @@
 		F4CBDCEA2A5E96DB006227FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CBDCEC2A5E96DB006227FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CBDCF12A5E96DC006227FA /* KoanbaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoanbaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4CBDCF52A5E96DC006227FA /* KoanbaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoanbaTests.swift; sourceTree = "<group>"; };
+		F4CBDCF52A5E96DC006227FA /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 		F4CBDCFB2A5E96DC006227FA /* KoanbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoanbaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CBDCFF2A5E96DC006227FA /* KoanbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoanbaUITests.swift; sourceTree = "<group>"; };
 		F4CBDD012A5E96DC006227FA /* KoanbaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoanbaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -180,6 +186,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F46249752A62E4DD000F65EC /* Movie List */ = {
+			isa = PBXGroup;
+			children = (
+				F46249762A62E4F1000F65EC /* Mock */,
+				F4CBDCF52A5E96DC006227FA /* MovieListTests.swift */,
+			);
+			path = "Movie List";
+			sourceTree = "<group>";
+		};
+		F46249762A62E4F1000F65EC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F46249772A62E503000F65EC /* MovieListInteractor.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F46249792A62E7CC000F65EC /* Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				F462497A2A62E7E0000F65EC /* Mock */,
+				F462497D2A62E81A000F65EC /* DetailPageTests.swift */,
+			);
+			path = "Detail Page";
+			sourceTree = "<group>";
+		};
+		F462497A2A62E7E0000F65EC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F462497B2A62E7F7000F65EC /* MovieDetailInteractor.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		F4912F712A5FED8500676E0A /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +264,8 @@
 		F4CBDCF42A5E96DC006227FA /* KoanbaTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4CBDCF52A5E96DC006227FA /* KoanbaTests.swift */,
+				F46249792A62E7CC000F65EC /* Detail Page */,
+				F46249752A62E4DD000F65EC /* Movie List */,
 			);
 			path = KoanbaTests;
 			sourceTree = "<group>";
@@ -860,7 +901,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4CBDCF62A5E96DC006227FA /* KoanbaTests.swift in Sources */,
+				F4CBDCF62A5E96DC006227FA /* MovieListTests.swift in Sources */,
+				F46249782A62E503000F65EC /* MovieListInteractor.swift in Sources */,
+				F462497C2A62E7F7000F65EC /* MovieDetailInteractor.swift in Sources */,
+				F462497E2A62E81A000F65EC /* DetailPageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
