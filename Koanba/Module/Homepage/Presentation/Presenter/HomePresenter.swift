@@ -15,6 +15,7 @@ protocol HomePresenter {
     
     func getMovieNowPlaying()
     func goToDetailPage(movieID: Int)
+    func filterData(text: String)
 }
 
 class HomeDefaultPresenter: HomePresenter {
@@ -29,6 +30,7 @@ class HomeDefaultPresenter: HomePresenter {
             return movieData.count
         }
     }
+    var filteredMovie: [HomepageModel] = []
     private var disposeBag = DisposeBag()
     
     init(view: HomeViewController, interactor: HomepageUseCase) {
@@ -39,7 +41,8 @@ class HomeDefaultPresenter: HomePresenter {
     func getMovieNowPlaying() {
         interactor.getMovieData()
             .subscribe { data in
-                self.movieData = data
+                self.filteredMovie = data
+                self.movieData = self.filteredMovie
                 DispatchQueue.main.async {
                     self.view.tableView.reloadData()
                 }
@@ -50,6 +53,17 @@ class HomeDefaultPresenter: HomePresenter {
     
     func goToDetailPage(movieID: Int) {
         self.router.goToDetailPage(movieID: movieID, controller: view)
+    }
+    
+    func filterData(text: String) {
+        if text.isEmpty {
+            self.movieData = self.filteredMovie
+            return
+        }
+        movieData = filteredMovie.filter({ data in
+            guard let name = data.title else {return false}
+            return name.lowercased().contains(text.lowercased())
+        })
     }
     
 }

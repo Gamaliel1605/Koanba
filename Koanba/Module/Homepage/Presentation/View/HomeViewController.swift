@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
 
@@ -14,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: HomePresenter?
+    private let disposebag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +25,22 @@ class HomeViewController: UIViewController {
     }
     
     func setupView() {
+        self.tfSearch.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.ID)
+        self.setupStream()
+    }
+    
+    func setupStream() {
+        self.tfSearch.rx.text.orEmpty
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .subscribe(onNext:{ [weak self] text in
+                self?.presenter?.filterData(text: text)
+                self?.tableView.reloadData()
+
+            }).disposed(by: disposebag)
+        
     }
 
 }
@@ -53,3 +69,5 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+extension HomeViewController: UITextFieldDelegate {}
