@@ -9,6 +9,7 @@ target 'Koanba' do
   pod 'Alamofire', '5.7.1'
   pod 'AlamofireImage', '4.2.0'
   pod 'RxSwift'
+  pod 'RxCocoa'
   # Pods for Koanba
 
   target 'KoanbaTests' do
